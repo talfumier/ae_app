@@ -28,3 +28,13 @@
     </div>
   </article>
 </template>
+<style scoped>
+  img {
+      transition: transform 0.5s ease;
+    }
+    @media screen and (min-width: 1000px){
+      img:hover{
+        transform: scale(1.7) translateY(40px);
+      }
+    }
+</style>
