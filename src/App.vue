@@ -1,7 +1,7 @@
 <script setup>
   import { ref, onMounted, watch } from 'vue'
   import { executeQuery } from './services/sparql'
-  import ArtworkCard from './components/ArtworkCard.vue'
+  import Card from './components/Card.vue'
   import Filters from './components/Filters.vue'
 
   const artworks = ref([])
@@ -92,7 +92,7 @@
   </header>
   <main class="mx-auto max-w-7xl p-6">
     <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-      <ArtworkCard
+      <Card
         v-for="artwork in artworks"
         :key="artwork.artwork"
         :artwork="artwork"
